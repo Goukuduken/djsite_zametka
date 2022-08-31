@@ -13,6 +13,8 @@ simple django project for training
 5) Добавить функционал для карточки + расширить БД (добавить edit, card create date)
 
 6) Тестовый хостинг на месяцок 
+
+
 Внешний вид: 
 ![image](https://user-images.githubusercontent.com/42943035/187775023-c155dd7b-2032-4ba7-a36d-5c11a090de04.png)
 
