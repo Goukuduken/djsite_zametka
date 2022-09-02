@@ -10,5 +10,8 @@ class Notice(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta: #for admin board
+        ordering = ['time_create', 'title']
+
 
 
