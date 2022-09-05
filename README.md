@@ -6,7 +6,7 @@ simple django project for training
       
       1.1) Настройка админпанели + 
 
-      1.2) Реализовать функционал через представления
+      1.2) Реализовать функционал через представления +-
 
 
 2) Косметическая верстка (улучшение внешнего вида)
@@ -21,10 +21,13 @@ simple django project for training
 
 
 Внешний вид: 
-![image](https://user-images.githubusercontent.com/42943035/187775023-c155dd7b-2032-4ba7-a36d-5c11a090de04.png)
+![image](https://user-images.githubusercontent.com/42943035/188482094-524755ec-464e-4723-bfed-b22560740748.png)
 
-При нажатии на кнопку "add notice" -> редирект на "fullnotice"
-![image](https://user-images.githubusercontent.com/42943035/187795194-57a46cc2-03f8-4abd-9aa8-ae89c5401ce7.png)
+При нажатии на кнопку "add notice" -> редирект на "addnotice"
+![image](https://user-images.githubusercontent.com/42943035/188482164-2216fdcd-ba98-4761-b12b-9e5e4590a124.png)
+
+
+При нажатии на карточку -> переход на пустышку (будет дорабатываться)
 
 
        
