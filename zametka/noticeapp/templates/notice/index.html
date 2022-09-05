@@ -10,29 +10,29 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <a href="{% url 'fullnotice' %}" type="button" class="btn btn-outline-primary">Add notice</a>
+                <a href="{% url 'addnotice' %}" type="button" class="btn btn-outline-primary">Add notice</a>
             </ul>
             <h1 class="me-auto mb-2 mb-lg-1">ZAMETKA</h1>
-            <a href="{% url 'fullnotice' %}" type="button" class="btn btn-outline-secondary">Menu</a>
+            <a href="#" type="button" class="btn btn-outline-secondary">Menu</a>
         </div>
     </div>
 </nav>
-</nav>
+
 
 <span class="border border-2">
     <div class="row">
+        {% csrf_token %}
         {% for elem in notice_card_information %}
-  <div class="col-sm-2">
+        <br><div class="col-sm-2">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">{{elem.title}}</h5>
         <p class="card-text">{{elem.text}}</p>
-        <a href="#" class="btn btn-primary">Delete notice</a>
+        <a href="{% url 'fullnotice' %}" class="btn btn-primary">Full Notice</a>
       </div>
-    </div>
+    </div></br>
   </div>
         {% endfor %}
 </div>

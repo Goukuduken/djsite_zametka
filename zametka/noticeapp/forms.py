@@ -12,5 +12,5 @@ class AddNotice(forms.ModelForm):
             'text': forms.Textarea(attrs={'class': 'form-label',
                                           'id': 'exampleFormControlTextarea1',
                                           'rows': '3',
-                                          'placeholder': 'Input your title here', }),
+                                          'placeholder': 'Input your text here', }),
         }
