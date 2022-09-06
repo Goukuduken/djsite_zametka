@@ -1,0 +1,102 @@
+
+
+body {
+   background: rgb(255, 255, 255);
+   font-size: 18px;
+   color:#343434;;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container {
+   max-width: 1280px;
+   margin: auto;
+   padding-top: 15px;
+}
+
+/* Навигация */
+/* ------------------------------- */
+
+.notice-navigation {
+   display: flex;
+   justify-content: space-between;
+}
+
+
+
+.notice-btn {
+background-color: inherit;
+font-size: inherit;
+color: #7272ea;
+padding:0px 30px;
+border: 2px solid #7272ea;
+border-radius: 20px;
+}
+
+.notice-btn a{
+   text-decoration: none;
+   color: #7272ea;
+
+}
+
+/* Форма заметки */
+/* ------------------------------- */
+
+.notice h3 {
+   text-align: center;
+   margin: 30px 0px;
+   color: #343434;
+}
+
+
+.notice-form label {
+   display:block;
+   color: #3d3d3ddc;
+   margin: 15px 0px;
+}
+
+.notice_cont {
+   display: flex;
+   margin-bottom: 25px;
+}
+
+/* .notice_cont>.notice-form {
+   width: 50%;
+
+} */
+
+.notice_cont>.notice-form:first-child {
+   margin-right: 20px;
+}
+
+.notice-form input,
+.notice-form textarea {
+   background: transparent;
+   width: 100%;
+   box-sizing: border-box;
+   font-size: inherit;
+   font-family: inherit;
+
+   border: 1px solid rgb(172, 171, 171);
+   border-radius: 5px;
+
+   color: #000000;
+   padding: 15px 10px 10px;
+   outline: none;
+
+}
+
+.notice-form_btn {
+   background: #7272ea;
+   color: #ffffff;
+   font-family: inherit;
+   font-size: inherit;
+   cursor: pointer;
+
+   padding: 12px 30px;
+   margin-top: 15px;
+   border: none;
+   border-radius: 10px;
+}
+
+

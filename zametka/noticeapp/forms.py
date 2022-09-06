@@ -6,11 +6,12 @@ class AddNotice(forms.ModelForm):
         model = Notice
         fields = ['title', 'text']
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-label',
-                                            'id': 'exampleFormControlInput1',
+            'title': forms.TextInput(attrs={'class': 'notice-form',
+                                            'id': 'notice-form-header',
                                             'placeholder': 'Input your title here', }),
-            'text': forms.Textarea(attrs={'class': 'form-label',
+            'text': forms.Textarea(attrs={'class': 'notice-form',
                                           'id': 'exampleFormControlTextarea1',
-                                          'rows': '3',
+                                          'rows': '10',
+                                          'cols': 30,
                                           'placeholder': 'Input your text here', }),
         }
