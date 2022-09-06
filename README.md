@@ -24,7 +24,7 @@ simple django project for training
 ![image](https://user-images.githubusercontent.com/42943035/188482094-524755ec-464e-4723-bfed-b22560740748.png)
 
 При нажатии на кнопку "add notice" -> редирект на "addnotice"
-![image](https://user-images.githubusercontent.com/42943035/188629790-7925ba70-7499-4c29-8400-ca06dcec24e7.png)
+![PWAzOvFE0cQ (1)](https://user-images.githubusercontent.com/42943035/188630024-765752fe-f3e8-4fd9-b0a0-6b3f3440634f.jpg)
 
 
 При нажатии на карточку -> переход на пустышку "fullnotice"
