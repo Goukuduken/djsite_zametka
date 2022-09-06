@@ -6,7 +6,7 @@ simple django project for training
       
       1.1) Настройка админпанели + 
 
-      1.2) Реализовать функционал через представления +-
+      1.2) Реализовать функционал через представления +- (добавить edit/delete)
 
 
 2) Косметическая верстка (улучшение внешнего вида)
@@ -24,10 +24,11 @@ simple django project for training
 ![image](https://user-images.githubusercontent.com/42943035/188482094-524755ec-464e-4723-bfed-b22560740748.png)
 
 При нажатии на кнопку "add notice" -> редирект на "addnotice"
-![image](https://user-images.githubusercontent.com/42943035/188482164-2216fdcd-ba98-4761-b12b-9e5e4590a124.png)
+![image](https://user-images.githubusercontent.com/42943035/188629790-7925ba70-7499-4c29-8400-ca06dcec24e7.png)
 
 
-При нажатии на карточку -> переход на пустышку (будет дорабатываться)
+При нажатии на карточку -> переход на пустышку "fullnotice"
+
 
 
        
