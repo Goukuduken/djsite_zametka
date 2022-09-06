@@ -30,7 +30,7 @@
       <div class="card-body">
         <h5 class="card-title">{{elem.title}}</h5>
         <p class="card-text">{{elem.text}}</p>
-        <a href="{% url 'fullnotice' %}" class="btn btn-primary">Full Notice</a>
+        <a href="{{ elem.get_absolute_url }}" class="btn btn-primary">Full Notice</a>
       </div>
     </div></br>
   </div>

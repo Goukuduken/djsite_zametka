@@ -17,10 +17,30 @@
             </ul>
             <h1 class="me-auto mb-2 mb-lg-1">ZAMETKA</h1>
             <a href="#" type="button" class="btn btn-outline-secondary">Menu</a>
+
         </div>
     </div>
 </nav>
 
+<span class="border border-2">
+    <div class="row">
+        {% csrf_token %}
+        <br>
+        <div class="col-sm-2">
+    <div class="card">
+      <div class="card-body col-md-8 offset-md-2">
+        <h5 class="card-title">{{notice_card_information.title}}</h5>
+        <p class="card-text">{{notice_card_information.text}}</p>
+      </div>
+        <br>
+
+            <div class="btn-group col-md-8 offset-md-2" role="group" aria-label="Basic mixed styles example">
+                  <button type="button" class="btn btn-danger">Delete</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+            </div>
+        </br>
+  </div>
+</span>
 
 <div class="fixed-bottom">
     <nav class="navbar navbar-expand-lg bg-light"></nav>
