@@ -21,13 +21,18 @@ simple django project for training
 
 
 Внешний вид: 
-![image](https://user-images.githubusercontent.com/42943035/188482094-524755ec-464e-4723-bfed-b22560740748.png)
+![image](https://user-images.githubusercontent.com/42943035/189394890-a744089a-56b6-4a96-8a74-4a3164f9ea08.png)
 
 При нажатии на кнопку "add notice" -> редирект на "addnotice"
-![PWAzOvFE0cQ (1)](https://user-images.githubusercontent.com/42943035/188630024-765752fe-f3e8-4fd9-b0a0-6b3f3440634f.jpg)
+![image](https://user-images.githubusercontent.com/42943035/189395088-45006f1a-56ef-4b5b-a811-15b1e85ffb84.png)
 
 
-При нажатии на карточку -> переход на пустышку "fullnotice"
+При нажатии на карточку -> переход на "fullnotice/id"
+![image](https://user-images.githubusercontent.com/42943035/189395170-9767c0bd-f517-4cd1-88c5-b9ecd6ba714a.png)
+
+При нажатии на кнопку "Delete" -> переход на "deletenotice/id"
+![image](https://user-images.githubusercontent.com/42943035/189396252-b41b8941-899b-45a5-a407-08b1ec4b1e93.png)
+
 
 
 
