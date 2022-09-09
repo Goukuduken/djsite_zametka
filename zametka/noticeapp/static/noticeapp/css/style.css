@@ -99,4 +99,13 @@ border-radius: 20px;
    border-radius: 10px;
 }
 
+/* Форма Full Notice */
+/* ------------------------------- */
 
+.notice_title_text {
+  text-align: center;
+}
+
+.notice_main_text {
+  text-align:center;
+}
