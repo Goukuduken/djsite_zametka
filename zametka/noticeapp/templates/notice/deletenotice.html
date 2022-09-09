@@ -19,10 +19,13 @@
             </div>
          </div>
       </nav>
-      <div class="container">
+      <form action="" method="post">
+          {% csrf_token %}
+          <div class="container">
          <div class="row">
             <div class="col align-self-center">
                <div class="card">
+                   {% csrf_token %}
                   <br>
                   <div class="notice_title_text">
                      <h5 class="card-title">{{notice_card_information.title}}</h5>
@@ -34,15 +37,13 @@
                   </div>
                   </br>
                   <br>
-                  <div class="btn-group col-md-8 offset-md-2" role="group" aria-label="Basic mixed styles example">
-                     <a href="{% url 'deletenotice' notice_card_information.pk %}" type="button" class="btn btn-danger">Delete</a>
-                     <a href="#" type="button" class="btn btn-warning">Edit</a>
-                  </div>
+                     <button type="submit" class="btn btn-danger">Delete</button>
                   </br>
                </div>
             </div>
          </div>
       </div>
+      </form>
       <div class="fixed-bottom">
          <nav class="navbar navbar-expand-lg bg-light"></nav>
       </div>

@@ -14,7 +14,11 @@ class NoticeHome(ListView): #Отвечает за базовую страниц
     template_name = "notice/index.html"
     context_object_name = 'notice_card_information'
 
-
+class DeleteNotice(DeleteView):
+    model = Notice
+    template_name = "notice/deletenotice.html"
+    context_object_name = "notice_card_information"
+    success_url = reverse_lazy('home')
 # def index(request):
 #     notice_card_information = Notice.objects.all()
 #     return render(request, 'notice/index.html', {'notice_card_information': notice_card_information})
@@ -39,7 +43,7 @@ def full_notice(request, notice_id):#по айди отображать карт
 def edit_notice(): #редактировать заметку на fullnotice
     pass
 
-def delete_notice(): #редактировать заметку на fullnotice
+def delete_notice(request, notice_id): #редактировать заметку на fullnotice
     pass
 
 #exceptions
