@@ -6,6 +6,8 @@ from .forms import *
 from .models import *
 from django.views.generic import ListView
 from django.views.generic import DeleteView
+from django.views.generic import UpdateView
+
 
 # Create your views here.
 
@@ -19,9 +21,20 @@ class DeleteNotice(DeleteView):
     template_name = "notice/deletenotice.html"
     context_object_name = "notice_card_information"
     success_url = reverse_lazy('home')
+
+
+class EditNotice(UpdateView):
+    model = Notice
+    template_name = "notice/editnotice.html"
+    fields = ['title', 'text']
+    context_object_name = "notice_card_information"
+    success_url = reverse_lazy('home')
+
 # def index(request):
 #     notice_card_information = Notice.objects.all()
 #     return render(request, 'notice/index.html', {'notice_card_information': notice_card_information})
+
+
 
 
 def add_notice(request):
@@ -40,11 +53,7 @@ def full_notice(request, notice_id):#по айди отображать карт
     notice_card_information = get_object_or_404(Notice, pk=notice_id)
     return render(request, 'notice/fullnotice.html', {'notice_card_information': notice_card_information})
 
-def edit_notice(): #редактировать заметку на fullnotice
-    pass
 
-def delete_notice(request, notice_id): #редактировать заметку на fullnotice
-    pass
 
 #exceptions
 def pageNotFound(request, exception):
