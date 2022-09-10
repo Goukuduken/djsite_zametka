@@ -1,5 +1,4 @@
 
-
 body {
    background: rgb(255, 255, 255);
    font-size: 18px;
@@ -25,18 +24,33 @@ body {
 
 
 .notice-btn {
-background-color: inherit;
-font-size: inherit;
-color: #7272ea;
-padding:0px 30px;
-border: 2px solid #7272ea;
-border-radius: 20px;
+    height: 42px;
+	border: 2px solid #7272ea;
+    border-radius: 20px;
+	background: #7272ea;
+    padding:5px 30px;
+	color: #f2f2f2;
+	font-size: inherit;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+    text-decoration: none;
+}
+
+.notice-btn:hover {
+    background: rgba(235,235,235,1);
+	color: #7272ea;
+	box-shadow: inset 0 0 0 0px #7272ea;
 }
 
 .notice-btn a{
    text-decoration: none;
-   color: #7272ea;
+   color: #dfcfe3;
+}
 
+.notice-btn a:hover{
+   text-decoration: none;
+   color: #7272ea;
 }
 
 /* Форма заметки */
@@ -97,6 +111,12 @@ border-radius: 20px;
    margin-top: 15px;
    border: none;
    border-radius: 10px;
+}
+
+.notice-form_btn:hover {
+   background: rgba(235,235,235,1);
+   color: #7272ea;
+   box-shadow: inset 0 0 0 2px #7272ea;
 }
 
 /* Форма Full Notice */
