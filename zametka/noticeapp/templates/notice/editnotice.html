@@ -13,16 +13,12 @@
       <div class="container">
          <!-- Навигация -->
          <nav class="navigation">
-            <div class="notice-navigation">
-               <button class="notice-btn">
-               <a href="{% url 'home' %}">Back </a>
-               </button>
-               <h2 class="notice-navigation_title">ZAMETKA</h2>
-               <button class="notice-btn">
-               <a href="#">Menu</a>
-               </button>
-            </div>
-         </nav>
+           <div class="notice-navigation">
+              <a class='notice-btn' type='button' href="{% url 'home' %}">Back</a>
+             <h2 class="notice-navigation_title">ZAMETKA</h2>
+              <a class='notice-btn' type='button' href="#">Menu</a>
+           </div>
+      </nav>
          <!-- Форма заметки -->
          <div class="notice">
             <h3>Edit notice</h3>

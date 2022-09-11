@@ -11,7 +11,8 @@ from django.views.generic import UpdateView
 
 # Create your views here.
 
-class NoticeHome(ListView): #Отвечает за базовую страницу сайта и основываться на классе ListView
+class NoticeHome(ListView):#Отвечает за базовую страницу сайта и основываться на классе ListView
+    paginate_by = 10
     model = Notice
     template_name = "notice/index.html"
     context_object_name = 'notice_card_information'
